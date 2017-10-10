@@ -7,7 +7,8 @@ import java.nio.file.Paths;
 
 public class FileCreate {
 	public static void main(String[] args) {
-		Path target = Paths.get("/home/deepin/Desktop/test.txt");
+		String route = "/home/deepin/Desktop/test.txt";
+		Path target = Paths.get(route);
 		try {
 			Path file = Files.createFile(target);
 		} catch (IOException e) {
